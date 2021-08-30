@@ -31,3 +31,8 @@ task task2{
         println("task2 executed")
     }
 }
+task task3{
+    doLast {
+        println("task3 executed")
+    }
+}
