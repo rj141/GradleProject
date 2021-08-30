@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mphasis.gp'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compile 'org.hibernate:hibernate-core:5.3.22.Final'
+
+    implementation 'org.springframework:spring-context:5.2.16.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}
+task task1{
+    doLast {
+        println("task1 executed")
+    }
+}
+task task2{
+    doLast {
+        println("task2 executed")
+    }
+}
